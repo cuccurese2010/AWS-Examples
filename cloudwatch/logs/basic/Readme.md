@@ -30,13 +30,8 @@ aws logs create-log-stream --log-group-name "/example/basic/app2" --log-stream-n
 aws logs describe-log-streams --log-group-name "/example/basic/app"
 ```
 
-## Inviare il file logs.json allo streamer
+## Send Logs to Log Stream (Invio di log per applicazioni custom) Inviare il file logs.json allo streamer
 aws logs put-log-events --log-group-name "/example/basic/app" --log-stream-name 1744127291  --log-events file://logs.json
-
-## Send Logs to Log Stream (Invio di log per applicazioni custom)
-
-aws logs put-log-events --log-group-name my-logs --log-stream-name 20150601 --log-events file://events
-
 
 
 ## Ruby SDK Logs
